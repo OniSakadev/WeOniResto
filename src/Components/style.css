@@ -1,0 +1,100 @@
+/* Header */
+
+.header {
+    @apply flex py-10 px-20 items-center fixed w-full;
+  }
+  
+  .logo {
+    @apply uppercase cursor-pointer;
+  }
+  
+  .site-logo {
+    @apply border-2 py-1 px-5 border-white text-white text-lg font-medium;
+  }
+  
+  .nav {
+    @apply ml-auto;
+  }
+  
+  .menu-list {
+    @apply flex gap-8 text-white;
+  }
+  
+  .menu-list li a {
+    transition: 0.3s;
+    @apply hover:font-semibold hover:text-yellow-500;
+  }
+  
+  /* Home */
+  
+  .bg-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+      url("https://demos.onepagelove.com/html/resto/img/hero_bg_1.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    @apply h-screen flex justify-center items-center;
+  }
+
+  /* About */
+
+.col-50 {
+  width: 50%;
+}
+
+.bg-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+      url("https://demos.onepagelove.com/html/resto/img/hero_bg_2.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    @apply flex justify-center items-center;
+}
+
+header.sticky {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: .3s;
+  @apply fixed w-full bg-white z-50 py-5
+}
+
+header.sticky .logo h2 {
+  @apply text-black border-black
+}
+
+header.sticky ul {
+  @apply text-black
+}
+
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+@media (max-width:768px) {
+
+  .header {
+    @apply px-4
+  }
+  .bg-home {
+      background-position: center center;
+  }
+
+  .nav-menu.active {
+      display: block;
+      @apply bg-yellow-600
+  }
+
+  header.sticky .ham {
+      @apply bg-yellow-500
+  }
+
+  header.sticky .hamburger-react div {
+      background: yellow !important;
+  }
+
+  header.sticky .ham-menu {
+      @apply top-20
+  }
+  .ham-menu {
+    @apply text-black
+  }
+}

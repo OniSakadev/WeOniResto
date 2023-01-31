@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./Components/About";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import Menu from "./Components/Menu";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import ReactLoading from "react-loading";
+import { useEffect, useState } from "react";
 
 function App() {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000);
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {loading ? (<div className="flex h-screen justify-center items-center gap-3">
+      <ReactLoading type="spinningBubbles" color="blue"  />
+      Sabar Bang</div>) : (
+        <>
+        <Header />
+      <main>
+        <Home />
+        <About />
+        <Menu />
+        <Contact />
+        <Footer />
+      </main>
+        </>
+        )}
     </div>
   );
 }
