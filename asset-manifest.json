@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/WeOniResto/static/css/main.576e110e.css",
-    "main.js": "/WeOniResto/static/js/main.f9c7afec.js",
+    "main.js": "/WeOniResto/static/js/main.6452b5cd.js",
     "index.html": "/WeOniResto/index.html",
     "main.576e110e.css.map": "/WeOniResto/static/css/main.576e110e.css.map",
-    "main.f9c7afec.js.map": "/WeOniResto/static/js/main.f9c7afec.js.map"
+    "main.6452b5cd.js.map": "/WeOniResto/static/js/main.6452b5cd.js.map"
   },
   "entrypoints": [
     "static/css/main.576e110e.css",
-    "static/js/main.f9c7afec.js"
+    "static/js/main.6452b5cd.js"
   ]
 }
