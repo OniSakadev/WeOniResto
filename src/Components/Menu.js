@@ -78,7 +78,7 @@ const Menu = () => {
                     value={foodModal}
                     onClick={(e) => getFoodModal(m.idMeal)}
                   >
-                    read more
+                    Lee mas
                   </button>
                   
                   <div
